@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Along</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", "sans-serif";
+      margin: 0;
+    }
+
+    nav {
+      top: 0;
+      height: 80px;
+      background: coral;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0 12vw;
+      justify-content: space-between;
+      z-index: 99;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+    .nav-items {
+      display: flex;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .nav-item {
+      padding: 4px 12px;
+      transition: 0.3s;
+    }
+    .nav-item.active {
+      background: white;
+      color: coral;
+    }
+    .nav-item:hover {
+      background: rgb(0, 0, 0, 0.12);
+    }
+
+    /* body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    } */
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 30vw;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+    textarea {
+      padding: 8px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    h2 {
+      text-align: center;
+    }
+    .team {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 12vw;
+    }
+    .member {
+      width: 30%;
+      background-color: rgb(0, 0, 0, 0.12);
+    }
+    img {
+      /* height: 100vh; */
+      object-fit: cover;
+      object-position: center;
+      padding: 11px;
+    }
+    .text {
+      text-align: center;
+    }
+    .text .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 2vh 12vw;
+    }
+    .hero-title {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  </style>
+
+  <body>
+    <nav>
+      <div class="logo">Print.ly</div>
+      <div class="nav-items">
+        <a href="home.html" class="nav-item">Home</a>
+        <a href="contact.html" class="nav-item">Blog</a>
+        <a href="about.html" class="nav-item">About us</a>
+        <a href="product.html" class="nav-item">Product</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-title">Team Members</div>
+    </div>
+    <div class="team">
+      <div class="member">
+        <div class="img">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy26X_EvjzeUWWaITrNUnqBx31coruQxfCIw&usqp=CAU"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <div class="title">Senu</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+            molestias!
+          </p>
+        </div>
+      </div>
+      <div class="member">
+        <div class="img">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy26X_EvjzeUWWaITrNUnqBx31coruQxfCIw&usqp=CAU"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <div class="title">Prakriti</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
+            quaerat?
+          </p>
+        </div>
+      </div>
+      <div class="member">
+        <div class="img">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy26X_EvjzeUWWaITrNUnqBx31coruQxfCIw&usqp=CAU"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <div class="title">Riwaj</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti,
+            vero?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <form id="contactForm" onsubmit="validateForm()">
+      <h2>Customer Feedback Form</h2>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="address">Your Address:</label>
+      <input type="text" id="address" name="address" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="feedback">Your Feedback</label>
+      <textarea name="feedback" id="feedback" cols="70" rows="10"></textarea>
+
+      <button type="submit">Submit</button>
+    </form> -->
+    <script src="script.js"></script>
+  </body>
+</html>

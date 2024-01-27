@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+}
+
+nav {
+  /* position: fixed; */
+  top: 0;
+  height: 80px;
+  background: coral;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 12vw;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.nav-items {
+  display: flex;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item {
+  padding: 4px 12px;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  background: rgb(0, 0, 0, 0.12);
+}
+.explore-printers {
+  width: 100%;
+  padding: 50px 12vw;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.recommended-printers {
+  display: flex;
+  padding: 16px 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recommended-printer {
+  width: 32%;
+  margin-right: 2%;
+  margin-bottom: 8px;
+  min-width: 200px;
+  flex-grow: 1;
+  background: white;
+  /* cursor: pointer; */
+  transition: 0.3s;
+}
+
+.recommended-printer:hover .recommended-printer-content-title {
+  color: white;
+}
+
+.recommended-printer:hover {
+  background: coral;
+  color: white;
+}
+
+.recommended-printer:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.recommended-printer-img,
+.recommended-printer-img img {
+  width: 100%;
+  position: relative;
+}
+
+.recommended-printer-img img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
+.recommended-printer-img .price {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: black;
+}
+
+.recommended-printer-content {
+  padding: 8px;
+}
+
+.recommended-printer-content-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: coral;
+  transition: 0.3s;
+}
+/* .recommended-printer-content-description a {
+  float: right;
+} */
